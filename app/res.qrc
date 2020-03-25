@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/images">
+    <file>public/images/close.png</file>
+    <file>public/images/icon0.png</file>
+    <file>public/images/maximize.png</file>
+    <file>public/images/minimize.png</file>
+    <file>public/images/restore.png</file>
+  </qresource>
+</RCC>

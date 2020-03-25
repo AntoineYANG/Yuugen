@@ -1,0 +1,5 @@
+﻿  uic MainWindow.ui
+  MainWindow.cpp
+  main.cpp
+  moc_MainWindow.cpp
+  app.vcxproj -> D:\project\Yuugen\app\x64\Debug\app.exe
