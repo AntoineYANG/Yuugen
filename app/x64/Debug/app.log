@@ -1,5 +1,6 @@
-﻿  uic MainWindow.ui
+﻿  moc CodeHighlight.h
+  CodeHighlight.cpp
   MainWindow.cpp
-  main.cpp
+  moc_CodeHighlight.cpp
   moc_MainWindow.cpp
   app.vcxproj -> D:\project\Yuugen\app\x64\Debug\app.exe

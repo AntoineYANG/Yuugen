@@ -82,6 +82,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CodeHighlight.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="src\YTitleBar.cpp" />
@@ -101,6 +102,7 @@
     <QtMoc Include="src\YTitleBar.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="CodeHighlight.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

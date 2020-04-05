@@ -46,7 +46,6 @@ private slots:
     void onButtonRestoreClicked();
     void onButtonMaxClicked();
     void onButtonCloseClicked();
-    void onRollTitle();
 
 private:
     QLabel* m_pIcon;                    // ±ÍÃ‚¿∏Õº±Í;

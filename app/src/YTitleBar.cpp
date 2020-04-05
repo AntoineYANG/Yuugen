@@ -16,7 +16,6 @@ YTitleBar::YTitleBar(QWidget* parent): QWidget(parent), m_isPressed(false) {
 
 YTitleBar::~YTitleBar() {}
 
-// 初始化控件;
 void YTitleBar::initControl() {
     this->setStyleSheet("QWidget{background:rgb(23,23,24);color:rgb(254,252,242);}");
 
@@ -41,8 +40,8 @@ void YTitleBar::initControl() {
     this->setTitle("Yuugen: an editor");
 
     const QString buttonStyle = "QPushButton{border:none;background:rgb(23,23,24);}\
-        QPushButton:hover{border:none;background:rgb(32,32,34);}\
-        QPushButton:pressed{border:none;background:rgb(42,42,48);}";
+        QPushButton:hover{border:none;background:rgb(42,42,45);}\
+        QPushButton:pressed{border:none;background:rgb(56,56,60);}";
 
     m_pButtonMin = new QPushButton;
     m_pButtonMin->setFixedSize(QSize(BUTTON_WIDTH, BUTTON_HEIGHT));
@@ -193,17 +192,4 @@ void YTitleBar::onButtonMaxClicked() {
 
 void YTitleBar::onButtonCloseClicked() {
     emit signalButtonCloseClicked();
-}
-
-// 该方法主要是让标题栏中的标题显示为滚动的效果;
-void YTitleBar::onRollTitle() {
-    static int nPos = 0;
-    QString titleContent = m_titleContent;
-    // 当截取的位置比字符串长时，从头开始;
-    if (nPos > titleContent.length()) {
-        nPos = 0;
-    }
-
-    m_pTitleContent->setText(titleContent.mid(nPos));
-    nPos++;
 }
